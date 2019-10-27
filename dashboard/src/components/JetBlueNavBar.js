@@ -13,7 +13,10 @@ import TermFreqGraphPage from './TermFreqGraphPage';
 import WordCloud from './WordCloud'
 import LineChart from './LineChart'
 
+let data = [["Words","Sentiment"],[0,0]];
+
 class JetBlueNavBar extends Component {
+    
     render() {
         return (
             <Router>
@@ -48,6 +51,7 @@ class JetBlueNavBar extends Component {
                 <Route path="/">
                 <Container>
                     <WordCloud />
+                    <LineChart data={data}></LineChart>
                 </Container>
                 </Route>
                 </Switch>

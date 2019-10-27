@@ -30,7 +30,7 @@ extractor = twitter_setup()
 #res = requests.get(endpoint + '?q=%23jetblue', headers=headers)
 
 #tweets = extractor.user_timeline(screen_name="realDonaldTrump", count=200, tweet_mode='extended')
-tweets = tweepy.Cursor(api.search, q='jetblue', tweet_mode='extended').items(1000000)
+tweets = tweepy.Cursor(api.search, q='%23jetblue', tweet_mode='extended').items(1000000)
 
 print('Loading tweets...')
 
@@ -39,6 +39,7 @@ url = 'http://35.245.55.69:5000/mongoinput'
 
 i = 1
 for tweet in tweets:
+    print(tweet)
     print('checking tweet' + str(i))
     i += 1
     #print tweet.created_at, tweet.text, tweet.lang
@@ -46,7 +47,7 @@ for tweet in tweets:
     if newjson['iso_language_code'] == 'en':
         utf8string = tweet.full_text.encode("utf8")
         postObj = {'text':utf8string}
-        requests.post(url, json = postObj)
+        #requests.post(url, json = postObj)
         #print(utf8string)
         #utf8string = utf8string.replace('\n', '')
         #f.write(utf8string)
