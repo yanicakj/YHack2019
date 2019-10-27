@@ -1,0 +1,33 @@
+.App {
+  background-color: #282c34;
+  min-height:100vh;
+  display: flex;
+}
+
+.Dashboard {
+ color: black;
+ font-size: calc(5px + 2vmin);
+ margin-top: 70px;
+ min-width: 100%;
+ align-content: center;
+ text-align: center;
+}
+
+.Display {
+  background-color: whitesmoke;
+}
+
+.Login{
+  background-color: whitesmoke;
+  color: black;
+  min-width: 100%;
+  font-size: calc(5px + 2vmin);;
+  align-content: center;
+  text-align: center;
+  margin-top: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 25px;
+}
