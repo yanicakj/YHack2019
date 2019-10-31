@@ -9,11 +9,12 @@ import {
     Link
 } from "react-router-dom";
 
-import TermFreqGraphPage from './TermFreqGraphPage';
+import EmojiChart from './EmojiChart';
 import WordCloud from './WordCloud'
-import LineChart from './LineChart'
+import MainPage from './MainPage'
+import BarChart from './BarChart';
 
-let data = [["Words","Sentiment"],[0,0]];
+
 
 class JetBlueNavBar extends Component {
     
@@ -22,7 +23,7 @@ class JetBlueNavBar extends Component {
             <Router>
             <div>
                 <Navbar bg="primary" variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                     <img
                         alt=""
                         src='/jetblue.png'
@@ -34,8 +35,9 @@ class JetBlueNavBar extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="/">Word Cloud</Nav.Link>
-                        <Nav.Link href="/about">Graph</Nav.Link>
+                        <Nav.Link href="/">Main Page</Nav.Link>
+                        <Nav.Link href="/wordcloud">Word Associations</Nav.Link>
+                        <Nav.Link href="/emojis">Emoji Analysis</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -43,16 +45,20 @@ class JetBlueNavBar extends Component {
                 {/* A <Switch> looks through its children <Route>s and
                     renders the first one that matches the current URL. */}
                 <Switch>
-                <Route path="/about">
+                <Route path="/emojis">
                     <Container>
-                    <TermFreqGraphPage />
+                        <EmojiChart /> 
                     </Container>
                 </Route>
-                <Route path="/">
-                <Container>
-                    <WordCloud />
-                    <LineChart data={data}></LineChart>
-                </Container>
+                <Route path="/wordcloud">
+                    <Container>
+                        <WordCloud />
+                    </Container>
+                </Route>
+                <Route exact path="/">
+                    <Container>
+                    <MainPage />
+                    </Container>
                 </Route>
                 </Switch>
             </div>
