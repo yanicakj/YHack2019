@@ -1,6 +1,8 @@
 # Mining Insights Online:
 ## JetBlue Customer Sentiment Prediction and Opinion Mining with Tweets
 
+### Check it out: http://mininginsights.online
+
 ## Our Goal
 Because JetBlue puts a high emphasis on a customer-centric approach, social media is a great tool for gathering opinions. The algorithms we incorporated were developed to suit the needs of their business.
 
