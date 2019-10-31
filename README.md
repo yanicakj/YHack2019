@@ -27,7 +27,7 @@ We deployed on the app on Netlify, and it is viewable [here](http://mininginsigh
 
 ## Main Page
 
-![yhack_sc_3](https://user-images.githubusercontent.com/20134674/67991987-7808d880-fc11-11e9-87cf-c5a17ca03465.png)
+![yhack_sc_1](https://user-images.githubusercontent.com/20134674/67991989-7808d880-fc11-11e9-9735-bf8ffc5bca78.png)
 
 ## Insights Page
 
@@ -35,7 +35,7 @@ We deployed on the app on Netlify, and it is viewable [here](http://mininginsigh
 
 ## Emoji Analysis Page
 
-![yhack_sc_1](https://user-images.githubusercontent.com/20134674/67991989-7808d880-fc11-11e9-9735-bf8ffc5bca78.png)
+![yhack_sc_3](https://user-images.githubusercontent.com/20134674/67991987-7808d880-fc11-11e9-87cf-c5a17ca03465.png)
 
 ## Google Cloud Platform Console
 
